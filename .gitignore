@@ -1,0 +1,44 @@
+# Airflow runtime logs and pid files
+logs/
+airflow-*.pid
+airflow-*.err
+airflow-*.out
+airflow-*.log
+airflow-webserver.pid
+airflow-api-server.pid
+
+# Generated Airflow config and local databases
+airflow.cfg
+unittests.cfg
+webserver_config.py
+airflow.db
+simple_auth_manager_passwords.json.generated
+standalone_admin_password.txt
+secrets.py
+
+# Environment and secrets (keep a template if you add one)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
